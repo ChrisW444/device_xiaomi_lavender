@@ -129,6 +129,9 @@ on early-init
     write /sys/block/dm-2/queue/read_ahead_kb 2048
     write /sys/block/dm-3/queue/read_ahead_kb 2048
 
+    # Disable UFS clock scaling
+    write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 0
+
 on property:sys.boot_completed=1
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
@@ -138,3 +141,6 @@ on property:sys.boot_completed=1
     # Block layer tuning: discard chunk size up to 128MB
     # Otherwise, contiguous discards can be merged
     write /sys/block/sda/queue/discard_max_bytes 134217728
+
+    # Enable UFS clock scaling back
+    write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
