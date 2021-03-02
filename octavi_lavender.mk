@@ -29,9 +29,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common Octavi-OS stuff.
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+
+OCTAVI_BUILD_TYPE := OFFICIAL
+OCTAVI_DEVICE_MAINTAINER := CHRISL7
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -42,7 +45,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys"
 
 # Device identifier
-PRODUCT_NAME := revengeos_lavender
+PRODUCT_NAME := octavi_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
