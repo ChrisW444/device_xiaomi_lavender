@@ -53,9 +53,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.ir@1.0-impl \
 	android.hardware.ir@1.0-service
 
-# Device properties
-$(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 
@@ -70,6 +67,8 @@ PRODUCT_COPY_FILES += \
 
 # Properties ($PATH.prop)
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Keylayout
 PRODUCT_COPY_FILES += \
