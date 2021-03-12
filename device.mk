@@ -61,10 +61,6 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# Keylayout
-PRODUCT_COPY_FILES += \
-	$(DEVICE_PATH)/configs/keylayout/sdm660-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sdm660-snd-card_Button_Jack.kl
-
 # Ramdisk
 PRODUCT_PACKAGES += \
 	init.device.rc
