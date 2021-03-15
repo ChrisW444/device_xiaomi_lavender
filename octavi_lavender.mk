@@ -46,8 +46,8 @@ OCTAVI_DEVICE_MAINTAINER := CHRISL7
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
-    PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys"
-    
+    PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V12.0.1.0.QFGMIXM release-keys"
+
 # Device identifier
 PRODUCT_NAME := octavi_lavender
 PRODUCT_MANUFACTURER := Xiaomi
