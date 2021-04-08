@@ -8,3 +8,7 @@ ro.qcom.ad.sensortype=2
 ro.eyecare.brightness.threshold=3
 ro.eyecare.brightness.level=8
 ro.hist.brightness.threshold=5
+
+# Octavi-OS
+ro.octavi.status=2.2 OFFICIAL
+ro.octavi.maintainer=CHRISL7
