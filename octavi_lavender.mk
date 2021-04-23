@@ -32,12 +32,8 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit some common Octavi-OS stuff.
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-IS_PHONE := true
-WITH_GAPPS := false
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 OCTAVI_BUILD_TYPE := OFFICIAL
 OCTAVI_DEVICE_MAINTAINER := CHRISL7
