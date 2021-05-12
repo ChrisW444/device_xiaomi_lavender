@@ -10,5 +10,5 @@ ro.eyecare.brightness.level=8
 ro.hist.brightness.threshold=5
 
 # Octavi-OS
-ro.octavi.status=2.3 OFFICIAL
+ro.octavi.status=2.4 OFFICIAL
 ro.octavi.maintainer=CHRISL7
